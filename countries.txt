@@ -1,0 +1,9 @@
+try:
+    with open("c:/Users/NGITHANDILE MASEKO/python2/countries.txt", "r") as coun_file:
+        if coun_file.readable():
+            print(coun_file.read())
+        else:
+            print("File is not readable.")
+except FileNotFoundError:
+    print("The file was not found. Check the path and try again.")
+
